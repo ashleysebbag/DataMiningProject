@@ -2,8 +2,8 @@
 # coding:utf-8
 """
 Name    : meetup_scrapping.py
-Author  : Ashley_SEBBAG
-Contact : ashsebbag@gmail.com
+Author  : Ashley_SEBBAG, Elie_GHANASSIA
+Contact : ashsebbag@gmail.com, elieghan@yahoo.fr
 Time    : 13/02/2021 17:06
 Desc    :
 """
