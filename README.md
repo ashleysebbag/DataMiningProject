@@ -45,7 +45,7 @@ location : location of the event, default = 'Netanya'
 
 Returns elements of the website
 
-Rreates a database
+Creates a database
 
 ## Contributing
 
