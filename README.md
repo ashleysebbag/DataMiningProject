@@ -36,8 +36,12 @@ All the default values are stored in a configuration file named 'config.py'.
 ## Usage
 
 ```terminal
-python meetup_scrapping.py
+python meetup_scrapping.py type loacation
 ```
+
+type : type of event, default = 'Machine Learning'
+
+location : location of the event, default = 'Netanya'
 
 Returns elements of the website
 
