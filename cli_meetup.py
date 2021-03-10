@@ -26,6 +26,7 @@ def main():
     parser = argparse.ArgumentParser()
 
     # command line options
+    parser.add_argument('limit', help='limit of number of events to search', nargs='?', type=int, default=CFG.LIMIT)
     parser.add_argument('type', help='type of event', nargs='?', type=str, default=CFG.DB_TYPE)
     parser.add_argument("-w", "--verbose", help=" welcome to the meetup scraper",
                         action="store_true")
