@@ -4,7 +4,11 @@ Web scraping, Mysql, AWS, Visualization
 ## Description
 
 Web Scraping is a technique employed to extract large amounts of data from websites whereby the data is extracted and saved to a local repository.
+
 The project consists of scraping a website in order to create a database from which we can use artificial intelligence algorithms.
+
+The program runs from a CLI where it is possible to specifiy what type of event to scrape.
+
 
 ## Website
 
@@ -32,6 +36,18 @@ We must therefore add pause times.
 Argparse is used to initiate a CLI.
 The code isencapsulated into classes in order to follow OOP principles
 All the default values are stored in a configuration file named 'config.py'.
+
+10/03/2020 
+
+The code creates a databased where all information is stored.
+
+
+## DB documentation
+
+    Events types
+    Events Organisers
+    Events Attendees
+    Events  Members
 
 ## Usage
 
