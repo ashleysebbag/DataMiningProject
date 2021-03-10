@@ -44,10 +44,10 @@ The code creates a databased where all information is stored.
 
 ## DB documentation
 
-    Events types
-    Events Organisers
-    Events Attendees
-    Events  Members
+- Events types
+- Events Organisers
+- Events Attendees
+- Events  Members
 
 ## Usage
 
