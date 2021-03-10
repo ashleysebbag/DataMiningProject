@@ -20,6 +20,7 @@ import re
 
 MEETUP_URL = 'https://www.meetup.com'
 
+
 class Scrapper:
     def __init__(self, web_page):
         self.web_page = web_page
@@ -109,10 +110,10 @@ class Scrapper:
         self.event_df = pd.DataFrame({
             'event_identifier': ['event_' + x.split('/')[-1] for x in self.event_list[:n]],
             'organizer_identifier': ['org_' + x.split('/')[-1] for x in organizer_url_id],
-            'titles': titles,
-            'times': times,
-            'hosts': hosts,
-            'addresses': addresses,
+            'title': titles,
+            'time': times,
+            'host': hosts,
+            'address': addresses,
             'details': details,
             'attendees_num': attendees_num
         })
