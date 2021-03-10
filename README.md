@@ -1,4 +1,4 @@
-# DataMiningProject
+# _DataMiningProject_
 Web scraping, Mysql, AWS, Visualization
 
 ## Description
