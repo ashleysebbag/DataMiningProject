@@ -70,7 +70,7 @@ class Database:
                             member_name varchar(255),
                             city varchar(255),
                             country varchar(255),
-                            member_since datetime,
+                            member_since varchar(30),
                             meetup_num int
                             );
                             """)
@@ -80,10 +80,9 @@ class Database:
                             event_identifier varchar(100),
                             organizer_id int,
                             title varchar(255),
-                            times datetime,
+                            times varchar(100),
                             host varchar(255),
                             address varchar(255),
-                            details varchar(255),
                             attendees_num int
                             );
                             """)
@@ -137,6 +136,62 @@ class Database:
 
             self.con.commit()
 
+    def populate_tables_members(self, data):
+
+        for index, row_df in data.iterrows():
+            unique_identifier = row_df['member_identifier']
+
+            self.cur.execute(f"""SELECT member_identifier as unique_identifier 
+                                 FROM Members WHERE member_identifier="{unique_identifier}";""")
+            is_duplicate = self.cur.fetchone()
+
+            if is_duplicate:
+                member_id = is_duplicate['unique_identifier']
+            else:
+                member_id = []
+
+            if unique_identifier in member_id:
+                continue
+
+            else:
+                query = fr"""INSERT INTO Members (member_identifier, member_name, city, country, member_since, meetup_num) 
+                                    VALUES (%s, %s, %s, %s, %s, %s);"""
+
+                self.cur.execute(query, (unique_identifier, row_df['member_name'], row_df['city'], row_df['country'],
+                                         row_df['member_since'], row_df['meetup_num']))
+
+            self.con.commit()
+
+    def populate_tables_events(self, data):
+
+        for index, row_df in data.iterrows():
+            unique_identifier = row_df['event_identifier']
+
+            self.cur.execute(f"""SELECT event_identifier as unique_identifier
+                                 FROM Events WHERE event_identifier="{unique_identifier}";""")
+            is_duplicate = self.cur.fetchone()
+
+            if is_duplicate:
+                event_id = is_duplicate['unique_identifier']
+            else:
+                event_id = []
+
+            if unique_identifier in event_id:
+                continue
+
+            else:
+                self.cur.execute(f"""SELECT organizer_id FROM Organizers WHERE organizer_identifier="{row_df['organizer_identifier']}";""")
+                organiser_query = self.cur.fetchone()
+                organizer_id = organiser_query['organizer_id']
+
+                query = fr"""INSERT INTO Events (event_identifier, organizer_id, title, times, host, address, attendees_num)
+                                    VALUES (%s, %s, %s, %s, %s, %s, %s);"""
+
+                self.cur.execute(query, (unique_identifier, organizer_id, row_df['title'], row_df['time'],
+                                         row_df['host'], row_df['address'], row_df['attendees_num']))
+
+            self.con.commit()
+
 
 def main():
     url = 'https://www.meetup.com/find/?keywords=data%20science'
@@ -150,6 +205,8 @@ def main():
     data = Database()
 
     data.populate_tables_organizers(meetup.organisers_df)
+    data.populate_tables_members(meetup.members_df)
+    data.populate_tables_events(meetup.event_df)
 
 
 if __name__ == '__main__':
