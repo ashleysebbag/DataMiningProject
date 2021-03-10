@@ -12,7 +12,7 @@ import config as CFG
 import argparse
 import urllib.request
 import logging
-from scraper_meetup import Scrapper
+from scrapper import Scrapper
 
 MEETUP_URL = CFG.DB_URL
 FI = CFG.FIND
