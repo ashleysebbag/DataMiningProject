@@ -15,7 +15,7 @@ The program runs from a CLI where it is possible to specifiy what type of event 
 
 We are using Meetup website to find the events in Netanya in the field of data science
 
-https://www.meetup.com'
+[link to Meetup!](https://www.meetup.com)
 
 However, the scraper can be used on any website. 
 
