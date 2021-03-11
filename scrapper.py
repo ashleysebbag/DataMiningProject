@@ -190,8 +190,13 @@ class Scrapper:
             organizer_name.append(soup.find_all('a', class_='groupHomeHeader-groupNameLink')[0].text)
             city.append(soup.find_all('a', class_='groupHomeHeaderInfo-cityLink')[0].text.split(',')[0])
             country.append(soup.find_all('a', class_='groupHomeHeaderInfo-cityLink')[0].text.split(',')[1])
-            members_num.append(
-                int(soup.find_all('a', class_='groupHomeHeaderInfo-memberLink')[0].text.split(' ')[0].replace(',', '')))
+            try:
+                members_num.append(
+                    int(soup.find_all('a', class_='groupHomeHeaderInfo-memberLink')[0].text.split(' ')[0].replace(',', '')))
+            except ValueError:
+                fic = soup.find_all('a', class_='groupHomeHeaderInfo-memberLink')[0].text.split(' ')[0].replace(',', '')
+                fic = re.sub('[^0-9]','', fic)
+                members_num.append(fic)
 
         self.organisers_df = pd.DataFrame({
             'organizer_identifier': ['org_' + x.split('/')[-1] for x in self.organizers_url],
