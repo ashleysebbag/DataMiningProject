@@ -44,7 +44,7 @@ The code creates a databased where all information is stored.
 ## Usage
 
 ```terminal
-python meetup_scrapping.py type loacation
+python scrapper.py type loacation
 ```
 
 type : type of event, default = 'Machine Learning'
