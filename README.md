@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/78728544/110751840-16b53880-824d-11eb-88cc-99b95077fa42.png)
 # _DataMiningProject_
 Web scraping, Mysql, AWS, Visualization
 
