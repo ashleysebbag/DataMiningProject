@@ -19,13 +19,13 @@ After installion of requirements.txt, file in the config.py update the mysql use
 
 To run Scraper (example)
 
-```python3 CLI.py
+`python3 CLI.py`
 
- python3 CLI.py 10
+ `python3 CLI.py 10`
  
- python3 CLI.py "data science"
+ `python3 CLI.py "data science"`
  
- python3 CLI.py "data science" 10```
+ `python3 CLI.py "data science" 10`
 
 ## Operating information
 
