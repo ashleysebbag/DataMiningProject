@@ -1,0 +1,313 @@
+2021-03-11 11:10:06,916-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-03-11 11:10:06,918-FILE:connectionpool.py-FUNC:_new_conn-LINE:227-Starting new HTTP connection (1): 127.0.0.1:51173
+2021-03-11 11:10:09,982-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session HTTP/1.1" 200 763
+2021-03-11 11:10:09,983-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:09,987-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/find/?keywords=science"}
+2021-03-11 11:10:12,221-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:10:12,221-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:12,221-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/element {"using": "css selector", "value": ".css-1jy1jkx"}
+2021-03-11 11:10:12,236-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/element HTTP/1.1" 404 1852
+2021-03-11 11:10:12,236-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:12,738-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/element {"using": "css selector", "value": ".css-1jy1jkx"}
+2021-03-11 11:10:12,748-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/element HTTP/1.1" 404 1852
+2021-03-11 11:10:12,749-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:13,253-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/element {"using": "css selector", "value": ".css-1jy1jkx"}
+2021-03-11 11:10:13,261-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/element HTTP/1.1" 404 1852
+2021-03-11 11:10:13,261-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:13,764-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/element {"using": "css selector", "value": ".css-1jy1jkx"}
+2021-03-11 11:10:13,773-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/element HTTP/1.1" 404 1852
+2021-03-11 11:10:13,773-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:14,279-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/element {"using": "css selector", "value": ".css-1jy1jkx"}
+2021-03-11 11:10:14,343-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/element HTTP/1.1" 404 1852
+2021-03-11 11:10:14,343-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:14,848-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/element {"using": "css selector", "value": ".css-1jy1jkx"}
+2021-03-11 11:10:14,863-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/element HTTP/1.1" 404 1852
+2021-03-11 11:10:14,864-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:15,367-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/element {"using": "css selector", "value": ".css-1jy1jkx"}
+2021-03-11 11:10:15,389-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/element HTTP/1.1" 404 1852
+2021-03-11 11:10:15,389-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:15,894-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/element {"using": "css selector", "value": ".css-1jy1jkx"}
+2021-03-11 11:10:15,984-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/element HTTP/1.1" 200 88
+2021-03-11 11:10:15,984-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:15,985-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:10:16,004-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 244428
+2021-03-11 11:10:16,009-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:16,071-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/BpScienceMeetup/events/276145272"}
+2021-03-11 11:10:22,555-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:10:22,555-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:22,556-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:10:22,617-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 441067
+2021-03-11 11:10:22,620-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:22,705-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/Le-Wagon-Berlin-Coding-Bootcamp/events/276585797"}
+2021-03-11 11:10:28,502-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:10:28,503-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:28,503-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:10:28,607-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 436387
+2021-03-11 11:10:28,613-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:28,721-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/BpScienceMeetup/events/wbjvrpyccfbpb/attendees/"}
+2021-03-11 11:10:30,346-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:10:30,346-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:33,350-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:10:33,381-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 430460
+2021-03-11 11:10:33,384-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:33,445-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/Le-Wagon-Berlin-Coding-Bootcamp/events/276585797/attendees/"}
+2021-03-11 11:10:38,563-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:10:38,564-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:41,568-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:10:41,599-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 383265
+2021-03-11 11:10:41,604-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:41,700-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/322218401/"}
+2021-03-11 11:10:43,883-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:10:43,884-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:43,884-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:10:43,905-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 121345
+2021-03-11 11:10:43,906-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:43,960-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/328016256/"}
+2021-03-11 11:10:45,029-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:10:45,029-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:45,030-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:10:45,042-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 120909
+2021-03-11 11:10:45,044-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:45,104-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/70670332/"}
+2021-03-11 11:10:47,421-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:10:47,422-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:47,422-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:10:47,441-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 162444
+2021-03-11 11:10:47,445-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:47,521-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/322226401/"}
+2021-03-11 11:10:49,047-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:10:49,049-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:49,049-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:10:49,058-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 114372
+2021-03-11 11:10:49,060-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:49,090-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/214853560/"}
+2021-03-11 11:10:49,865-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:10:49,865-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:49,866-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:10:49,878-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 111978
+2021-03-11 11:10:49,882-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:49,933-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/119669992/"}
+2021-03-11 11:10:50,861-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:10:50,861-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:50,861-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:10:50,872-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 113297
+2021-03-11 11:10:50,873-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:50,911-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/327964124/"}
+2021-03-11 11:10:52,160-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:10:52,161-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:52,161-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:10:52,171-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 111973
+2021-03-11 11:10:52,172-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:52,219-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/213753206/"}
+2021-03-11 11:10:54,142-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:10:54,143-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:54,143-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:10:54,156-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 134547
+2021-03-11 11:10:54,157-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:54,199-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/236112457/"}
+2021-03-11 11:10:55,779-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:10:55,780-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:55,780-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:10:55,797-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 171464
+2021-03-11 11:10:55,800-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:55,858-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/63804762/"}
+2021-03-11 11:10:57,986-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:10:57,987-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:57,987-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:10:58,024-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 167133
+2021-03-11 11:10:58,027-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:58,285-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/313267686/"}
+2021-03-11 11:10:59,373-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:10:59,374-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:59,374-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:10:59,386-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 118181
+2021-03-11 11:10:59,388-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:10:59,440-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/301714345/"}
+2021-03-11 11:11:00,840-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:00,841-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:00,842-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:00,861-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 138855
+2021-03-11 11:11:00,864-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:00,932-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/178899442/"}
+2021-03-11 11:11:04,355-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:04,355-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:04,355-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:04,392-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 314301
+2021-03-11 11:11:04,396-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:04,503-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/201845448/"}
+2021-03-11 11:11:05,466-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:05,466-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:05,467-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:05,486-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 112373
+2021-03-11 11:11:05,488-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:05,538-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/41016012/"}
+2021-03-11 11:11:07,871-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:07,872-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:07,872-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:07,898-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 160860
+2021-03-11 11:11:07,904-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:07,985-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/123068182/"}
+2021-03-11 11:11:09,551-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:09,552-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:09,552-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:09,634-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 173276
+2021-03-11 11:11:09,639-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:09,894-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/189341352/"}
+2021-03-11 11:11:11,793-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:11,793-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:11,793-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:11,814-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 218552
+2021-03-11 11:11:11,818-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:11,928-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/250049176/"}
+2021-03-11 11:11:13,936-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:13,936-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:13,936-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:13,948-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 156135
+2021-03-11 11:11:13,950-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:13,993-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/248934344/"}
+2021-03-11 11:11:15,503-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:15,503-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:15,504-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:15,545-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 123209
+2021-03-11 11:11:15,546-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:15,581-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/326445470/"}
+2021-03-11 11:11:16,831-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:16,832-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:16,832-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:16,849-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 112605
+2021-03-11 11:11:16,850-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:16,893-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/201733167/"}
+2021-03-11 11:11:17,792-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:17,793-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:17,793-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:17,804-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 137628
+2021-03-11 11:11:17,806-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:17,853-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/35712202/"}
+2021-03-11 11:11:43,771-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:43,771-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:43,771-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:43,882-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 1624731
+2021-03-11 11:11:43,911-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:44,666-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/282049884/"}
+2021-03-11 11:11:46,708-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:46,709-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:46,709-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:46,746-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 139054
+2021-03-11 11:11:46,748-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:46,795-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/171900032/"}
+2021-03-11 11:11:48,722-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:48,722-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:48,723-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:48,735-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 128780
+2021-03-11 11:11:48,738-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:48,792-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/13226221/"}
+2021-03-11 11:11:50,190-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:50,191-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:50,191-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:50,227-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 124737
+2021-03-11 11:11:50,230-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:50,361-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/5045708/"}
+2021-03-11 11:11:51,353-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:51,354-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:51,354-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:51,367-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 110968
+2021-03-11 11:11:51,368-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:51,399-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/173693772/"}
+2021-03-11 11:11:52,862-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:52,862-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:52,862-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:52,878-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 154004
+2021-03-11 11:11:52,882-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:52,932-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/95952162/"}
+2021-03-11 11:11:54,788-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:54,788-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:54,788-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:54,799-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 136893
+2021-03-11 11:11:54,800-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:54,838-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/149736552/"}
+2021-03-11 11:11:56,539-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:56,541-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:56,542-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:56,586-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 218217
+2021-03-11 11:11:56,596-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:56,732-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/6741060/"}
+2021-03-11 11:11:57,967-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:57,968-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:57,968-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:57,985-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 173415
+2021-03-11 11:11:57,988-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:58,094-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/273912891/"}
+2021-03-11 11:11:59,073-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:59,073-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:59,073-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:11:59,095-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 114342
+2021-03-11 11:11:59,097-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:59,153-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/278742849/"}
+2021-03-11 11:11:59,987-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:11:59,988-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:11:59,988-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:12:00,003-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 124912
+2021-03-11 11:12:00,005-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:12:00,067-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/12913471/"}
+2021-03-11 11:12:01,002-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:12:01,002-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:12:01,003-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:12:01,018-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 112575
+2021-03-11 11:12:01,020-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:12:01,072-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/members/9686923/"}
+2021-03-11 11:12:02,566-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:12:02,567-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:12:02,568-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:12:02,596-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 121709
+2021-03-11 11:12:02,598-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:12:02,742-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/BpScienceMeetup"}
+2021-03-11 11:12:15,219-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:12:15,220-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:12:15,220-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:12:15,287-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 200 584625
+2021-03-11 11:12:15,291-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:12:15,395-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/url {"url": "https://www.meetup.com/Le-Wagon-Berlin-Coding-Bootcamp"}
+2021-03-11 11:12:18,409-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "POST /session/668c55c42bd8d28ad38e6934a9ac36fe/url HTTP/1.1" 200 14
+2021-03-11 11:12:18,409-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:12:18,410-FILE:remote_connection.py-FUNC:_request-LINE:388-GET http://127.0.0.1:51173/session/668c55c42bd8d28ad38e6934a9ac36fe/source {}
+2021-03-11 11:12:18,502-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51173 "GET /session/668c55c42bd8d28ad38e6934a9ac36fe/source HTTP/1.1" 404 1871
+2021-03-11 11:12:18,503-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:12:23,075-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51273/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-03-11 11:12:23,076-FILE:connectionpool.py-FUNC:_new_conn-LINE:227-Starting new HTTP connection (1): 127.0.0.1:51273
+2021-03-11 11:12:27,295-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51273 "POST /session HTTP/1.1" 200 763
+2021-03-11 11:12:27,297-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:12:27,300-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51273/session/100e8f107a8537ebbf050910bb59d938/url {"url": "https://www.meetup.com/find/?keywords=data%20science"}
+2021-03-11 11:12:33,662-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51273 "POST /session/100e8f107a8537ebbf050910bb59d938/url HTTP/1.1" 200 14
+2021-03-11 11:12:33,663-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:12:33,664-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51273/session/100e8f107a8537ebbf050910bb59d938/element {"using": "css selector", "value": ".css-1jy1jkx"}
+2021-03-11 11:12:33,666-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51273 "POST /session/100e8f107a8537ebbf050910bb59d938/element HTTP/1.1" 404 1750
+2021-03-11 11:12:33,666-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:17:08,381-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51362/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-03-11 11:17:08,382-FILE:connectionpool.py-FUNC:_new_conn-LINE:227-Starting new HTTP connection (1): 127.0.0.1:51362
+2021-03-11 11:17:12,738-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51362 "POST /session HTTP/1.1" 200 763
+2021-03-11 11:17:12,739-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:17:12,745-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51362/session/7f6bd8b1c992c4641df142342047b430/url {"url": "https://www.meetup.com/find/?keywords=data%20science"}
+2021-03-11 11:17:14,118-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51362 "POST /session/7f6bd8b1c992c4641df142342047b430/url HTTP/1.1" 200 14
+2021-03-11 11:17:14,120-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:17:14,121-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51362/session/7f6bd8b1c992c4641df142342047b430/element {"using": "css selector", "value": ".css-1jy1jkx"}
+2021-03-11 11:17:14,124-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51362 "POST /session/7f6bd8b1c992c4641df142342047b430/element HTTP/1.1" 404 1750
+2021-03-11 11:17:14,124-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:19:30,225-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51402/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-03-11 11:19:30,226-FILE:connectionpool.py-FUNC:_new_conn-LINE:227-Starting new HTTP connection (1): 127.0.0.1:51402
+2021-03-11 11:19:33,543-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51402 "POST /session HTTP/1.1" 200 763
+2021-03-11 11:19:33,544-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:19:33,549-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51402/session/d32fe3072af487e5e18a21c878f960f9/url {"url": "https://www.meetup.com/find/?keywords=data%20science"}
+2021-03-11 11:19:36,271-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51402 "POST /session/d32fe3072af487e5e18a21c878f960f9/url HTTP/1.1" 200 14
+2021-03-11 11:19:36,272-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:19:36,272-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51402/session/d32fe3072af487e5e18a21c878f960f9/element {"using": "css selector", "value": ".css-1jy1jkx"}
+2021-03-11 11:19:36,289-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51402 "POST /session/d32fe3072af487e5e18a21c878f960f9/element HTTP/1.1" 404 1852
+2021-03-11 11:19:36,289-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:19:36,793-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51402/session/d32fe3072af487e5e18a21c878f960f9/element {"using": "css selector", "value": ".css-1jy1jkx"}
+2021-03-11 11:19:36,805-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51402 "POST /session/d32fe3072af487e5e18a21c878f960f9/element HTTP/1.1" 404 1852
+2021-03-11 11:19:36,805-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:19:37,308-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51402/session/d32fe3072af487e5e18a21c878f960f9/element {"using": "css selector", "value": ".css-1jy1jkx"}
+2021-03-11 11:19:37,316-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51402 "POST /session/d32fe3072af487e5e18a21c878f960f9/element HTTP/1.1" 404 1852
+2021-03-11 11:19:37,317-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request
+2021-03-11 11:19:37,822-FILE:remote_connection.py-FUNC:_request-LINE:388-POST http://127.0.0.1:51402/session/d32fe3072af487e5e18a21c878f960f9/element {"using": "css selector", "value": ".css-1jy1jkx"}
+2021-03-11 11:19:37,827-FILE:connectionpool.py-FUNC:_make_request-LINE:452-http://127.0.0.1:51402 "POST /session/d32fe3072af487e5e18a21c878f960f9/element HTTP/1.1" 404 1871
+2021-03-11 11:19:37,827-FILE:remote_connection.py-FUNC:_request-LINE:440-Finished Request

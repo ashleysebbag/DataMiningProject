@@ -1,20 +1,16 @@
 #!/usr/bin/env python
 # coding:utf-8
 """
-Name    : DB.py.py
-Author  : Ashley_SEBBAG
-Contact : ashsebbag@gmail.com
-Time    : 09/03/2021 22:36
-Desc    :
+Name    : DB.py
+Author  : Ashley_SEBBAG Elie_GHANASSIA
+Contact : ashsebbag@gmail.com elieghan@yahoo.fr
+Time    : 05/03/2021 17:22
+Desc    : Database of Meetup Scrapper
 """
 
 import pymysql
 import config as cfg
 import logging
-import sys
-import re
-import pandas as pd
-import numpy as np
 import scrapper
 
 logger = logging.getLogger()
@@ -90,7 +86,9 @@ class Database:
         self.cur.execute("""CREATE TABLE IF NOT EXISTS Attendees (
                             attendee_id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
                             event_id int,
-                            member_id int
+                            member_id int,
+                            event_identifier varchar(100),
+                            member_identifier varchar(100)
                             );
                             """)
 
@@ -124,7 +122,6 @@ class Database:
                 organizer_id = []
 
             if unique_identifier in organizer_id:
-                print(organizer_id)
                 continue
 
             else:
@@ -192,21 +189,60 @@ class Database:
 
             self.con.commit()
 
+    def populate_tables_attendee(self, data):
+
+        for index, row_df in data.iterrows():
+            event_unique_identifier = row_df['event_identifier']
+            member_unique_identifier = row_df['member_identifier']
+
+            self.cur.execute(f"""SELECT event_identifier, member_identifier
+                                 FROM Attendees WHERE event_identifier="{event_unique_identifier}" 
+                                 AND member_identifier="{member_unique_identifier}";""")
+            is_duplicate = self.cur.fetchone()
+
+            if is_duplicate:
+                event_ident = is_duplicate['event_identifier']
+                member_ident = is_duplicate['member_identifier']
+            else:
+                event_ident = []
+                member_ident = []
+
+            if event_unique_identifier in event_ident and member_unique_identifier in member_ident:
+                continue
+
+            else:
+                self.cur.execute(f"""SELECT event_id FROM Events WHERE event_identifier="{row_df['event_identifier']}";""")
+                event_query = self.cur.fetchone()
+                event_id = event_query['event_id']
+
+                self.cur.execute(f"""SELECT member_id FROM Members WHERE member_identifier="{row_df['member_identifier']}";""")
+                member_query = self.cur.fetchone()
+                member_id = member_query['member_id']
+
+                query = fr"""INSERT INTO Attendees (event_id, member_id, event_identifier, member_identifier)
+                                    VALUES (%s, %s, %s, %s);"""
+
+                self.cur.execute(query, (event_id, member_id, row_df['event_identifier'], row_df['member_identifier']))
+
+            self.con.commit()
+
 
 def main():
     url = 'https://www.meetup.com/find/?keywords=data%20science'
+
     meetup = scrapper.Scrapper(url)
     meetup.event_urls()
-    meetup.event_info(n=1)
+    meetup.event_info()
     meetup.attendees_info()
     meetup.members_info()
     meetup.organisers_info()
 
-    data = Database()
 
+    data = Database()
     data.populate_tables_organizers(meetup.organisers_df)
     data.populate_tables_members(meetup.members_df)
     data.populate_tables_events(meetup.event_df)
+    data.populate_tables_attendee(meetup.attendees_df)
 
 
 if __name__ == '__main__':

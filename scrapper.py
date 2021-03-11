@@ -1,11 +1,11 @@
 # !/usr/bin/env python
 # coding:utf-8
 """
-Name    : meetup_scrapper.py
-Author  : Ashley_SEBBAG
-Contact : ashsebbag@gmail.com
+Name    : scrapper.py
+Author  : Ashley_SEBBAG Elie_GHANASSIA
+Contact : ashsebbag@gmail.com elieghan@yahoo.fr
 Time    : 05/03/2021 17:22
-Desc    :
+Desc    : Meetup Scrapper
 """
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
@@ -76,8 +76,8 @@ class Scrapper:
         self.nb_event = len(event_list)
 
     def event_info(self, n=0):
-        if n == 0:
-            pass
+        if n == 0 or n >= len(self.event_list):
+            n = len(self.event_list)
         else:
             self.event_list = self.event_list[:n]
 
@@ -139,9 +139,9 @@ class Scrapper:
 
         self.attendees_df = pd.DataFrame({
             'event_identifier': ['event_' + x.split('/')[-1] for x in self.event_list],
-            'members_identifier': [['member_' + x.split('/')[-2] for x in group] for group in events_attendees]
+            'member_identifier': [['member_' + x.split('/')[-2] for x in group] for group in events_attendees]
         })
-        self.attendees_df = self.attendees_df.explode('members_identifier')
+        self.attendees_df = self.attendees_df.explode('member_identifier')
 
     def members_info(self):
 

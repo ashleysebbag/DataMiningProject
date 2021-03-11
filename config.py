@@ -1,19 +1,20 @@
+#!/usr/bin/env python
+# coding:utf-8
+"""
+Name    : DB.py
+Author  : Ashley_SEBBAG Elie_GHANASSIA
+Contact : ashsebbag@gmail.com elieghan@yahoo.fr
+Time    : 05/03/2021 17:22
+Desc    : Config file of Meetup Scrapper
+"""
 
-# Config File
 
+MEETUP_URL = 'https://www.meetup.com'
+DEFAULT_MEETUP_URL = 'https://www.meetup.com/find/?keywords=data%20science'
 
-# Lists of URLs
-
-DB_URL_MEETUP = 'https://www.meetup.com/find/?keywords=data%20science'
-DB_URL = 'https://www.meetup.com'
 FIND = '/find/?keywords='
-LIMIT = 30
 
 # DATABASE
 DATABASE_NAME = 'meetup'
-PASSWORD_DB_SERVER ='password'
-
-# Default types and location:
-
-DB_TYPE = 'data science'
+PASSWORD_DB_SERVER = 'password'
 
