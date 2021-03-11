@@ -44,7 +44,7 @@ The code creates a databased where all information is stored.
 
 
 ## DB documentation
-
+<img width="1070" alt="Screenshot 2021-03-11 at 09 36 02" src="https://user-images.githubusercontent.com/78728544/110751965-419f8c80-824d-11eb-8851-297080f00f14.png">
 - Events types
 - Events Organisers
 - Events Attendees
