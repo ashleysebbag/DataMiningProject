@@ -21,7 +21,9 @@ However, the scraper can be used on any website.
 
 ## Installation
 
-Needs python installed in the OS
+The Scraper requires certain packages to run and all must be installed via the requirements.txt file.
+`pip3 --user install requirements.txt`
+After installion of requirements.txt, file in the config.py update the mysql user and password.
 
 ## Operating information
 
