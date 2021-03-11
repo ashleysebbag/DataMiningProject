@@ -14,11 +14,12 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from bs4 import BeautifulSoup
+import config as cfg
 import pandas as pd
 import time
 import re
 
-MEETUP_URL = 'https://www.meetup.com'
+MEETUP_URL = cfg.MEETUP_URL
 
 
 class Scrapper:
