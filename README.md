@@ -2,20 +2,10 @@
 # _DataMiningProject_
 Web scraping, Mysql, AWS, Visualization
 
+
 ## Description
-
-Web Scraping is a technique employed to extract large amounts of data from websites whereby the data is extracted and saved to a local repository.
-
-The project consists of scraping a website in order to create a database from which we can use artificial intelligence algorithms.
-
-The program runs from a CLI where it is possible to specifiy what type of event to scrape.
-
-
-## Website
-
-We are using Meetup website to find the events.
-
-[Link to Meetup!](https://www.meetup.com)
+Welcome to the Meetup web scraper!
+This program scrapers data about Events from the website [Meetup!](https://www.meetup.com)
 
 
 ## Installation
