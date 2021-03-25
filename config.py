@@ -17,4 +17,5 @@ FIND = '/find/?keywords='
 # DATABASE
 DATABASE_NAME = 'meetup'
 PASSWORD_DB_SERVER = 'password'
+HOST = 'localhost' 
 
