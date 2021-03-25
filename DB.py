@@ -33,7 +33,7 @@ class Database:
         self.create_tables()
 
     def connect_db(self):
-        con = pymysql.connect(host='localhost', user='root',
+        con = pymysql.connect(host=cfg.HOST, user='root',
                               password=cfg.PASSWORD_DB_SERVER, cursorclass=pymysql.cursors.DictCursor)
         cur = con.cursor()
         return con, cur
@@ -42,7 +42,7 @@ class Database:
         query = f'CREATE DATABASE IF NOT EXISTS {self.db_name}'
         self.cur.execute(query)
 
-        con = pymysql.connect(host='localhost', user='root', password=cfg.PASSWORD_DB_SERVER,
+        con = pymysql.connect(host=cfg.HOST, user='root', password=cfg.PASSWORD_DB_SERVER,
                               database=self.db_name, cursorclass=pymysql.cursors.DictCursor)
         cur = con.cursor()
 
