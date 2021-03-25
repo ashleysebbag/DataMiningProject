@@ -208,7 +208,7 @@ class Scrapper:
 
 
 def main():
-    url = 'https://www.meetup.com/find/?keywords=data%20science'
+    url = cfg.DEFAULT_MEETUP_URL 
     meetup = Scrapper(url)
     meetup.event_urls()
     meetup.event_info(n=1)
