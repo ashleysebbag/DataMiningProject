@@ -12,6 +12,7 @@ import config as cfg
 import argparse
 import scrapper as scr
 import DB as db
+import sys
 
 HELP_STRING = """Welcome to Meetup scraper!
 You can use 2 parameters:
@@ -66,22 +67,40 @@ def push_in_db(meetup):
     data.populate_tables_attendee(meetup.attendees_df)
 
 
+def check_input():
+    """
+    Checks if the user input is correct
+    """
+    if args.type is None or args.limit is None or len(args) < 2:
+        raise IOError('Not enough input parameters!')
+    if len(unknown) > 0:
+        raise IOError('Not enough input parameters!')
+    if not args.limit.isdigit() :
+        raise IOError(f'The limit should be an integer {args.limit}')
+    if args.limit <= 0:
+        raise IOError(f'The limit should be positive {args.limit}')
+
+
+def main():
+    try:
+        check_input()
+    except Exception as e:
+        print(e)
+        sys.exit(1)
+
 def main():
     if args.type is None:
         url = cfg.DEFAULT_MEETUP_URL
 
         if args.limit is None:
             meetup = scrape(url)
-
-        if args.limit >= 0:
+        elif args.limit >= 0:
             meetup = scrape(url, args.limit)
 
     if args.type:
         url = cfg.MEETUP_URL + cfg.FIND + args.type.replace(" ", "%20")
-
         if args.limit is None:
             meetup = scrape(url)
-
         if args.limit >= 0:
             meetup = scrape(url, args.limit)
 
