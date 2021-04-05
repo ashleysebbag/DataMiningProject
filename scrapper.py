@@ -14,12 +14,11 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from bs4 import BeautifulSoup
-import config as cfg
 import pandas as pd
 import time
 import re
 
-MEETUP_URL = cfg.MEETUP_URL
+MEETUP_URL = 'https://www.meetup.com'
 
 
 class Scrapper:
@@ -153,19 +152,32 @@ class Scrapper:
         meetup_num = []
         for member_link in self.members_url:
             self.driver.get(member_link)
+            try:
+                element_present = EC.presence_of_element_located((By.CLASS_NAME, 'text-heading font-bold text-center md:text-left'))
+                WebDriverWait(self.driver, 5).until(element_present)
+
+            except TimeoutException:
+                self.driver.refresh()
+
             content = self.driver.page_source
             soup = BeautifulSoup(content, 'lxml')
 
-            member_name.append(soup.find_all('span', class_='memName fn')[0].text)
-            city.append(soup.find_all('span', class_='locality')[0].text)
-            country.append(soup.find_all('span', class_='display-none country-name')[0].text)
-            member_since.append(soup.find_all('p')[1].text)
+            member_name.append(soup.find_all('h1', class_='text-heading font-bold text-center md:text-left')[0].text)
+            city.append(soup.find_all('span', class_='text-gray6')[0].text)
+            country.append('')
+            try:
+                member_since.append(soup.find_all('span', class_='text-xl font-semibold mt-2 text-center mb-4')[0].text[-4:])
+            except IndexError:
+                member_since.append(soup.find_all('span', class_='text-xl font-semibold mt-2 text-center')[0].text[-4:])
             try:
                 meetup_num.append(
-                    int(re.findall('[0-9]+', soup.find_all('h2', class_='text--display3 flush--bottom')[0].text)[0]))
+                    int(re.findall('[0-9]+', soup.find_all('span', class_='text-gray6')[0].text)[0]))
             except IndexError:
                 meetup_num.append(0)
 
+        #
+        # test = ['member_' + x.split('/')[-2] for x in self.members_url]
+        # print(len(test), len(member_name), len(city), len(country), len(member_since), len(meetup_num))
         self.members_df = pd.DataFrame({
             'member_identifier': ['member_' + x.split('/')[-2] for x in self.members_url],
             'member_name': member_name,
@@ -190,13 +202,8 @@ class Scrapper:
             organizer_name.append(soup.find_all('a', class_='groupHomeHeader-groupNameLink')[0].text)
             city.append(soup.find_all('a', class_='groupHomeHeaderInfo-cityLink')[0].text.split(',')[0])
             country.append(soup.find_all('a', class_='groupHomeHeaderInfo-cityLink')[0].text.split(',')[1])
-            try:
-                members_num.append(
-                    int(soup.find_all('a', class_='groupHomeHeaderInfo-memberLink')[0].text.split(' ')[0].replace(',', '')))
-            except ValueError:
-                fic = soup.find_all('a', class_='groupHomeHeaderInfo-memberLink')[0].text.split(' ')[0].replace(',', '')
-                fic = re.sub('[^0-9]','', fic)
-                members_num.append(fic)
+            members_num.append(
+                int(soup.find_all('a', class_='groupHomeHeaderInfo-memberLink')[0].text.split(' ')[0].replace(',', '')))
 
         self.organisers_df = pd.DataFrame({
             'organizer_identifier': ['org_' + x.split('/')[-1] for x in self.organizers_url],
@@ -208,7 +215,7 @@ class Scrapper:
 
 
 def main():
-    url = cfg.DEFAULT_MEETUP_URL 
+    url = 'https://www.meetup.com/find/?keywords=data%20science'
     meetup = Scrapper(url)
     meetup.event_urls()
     meetup.event_info(n=1)
